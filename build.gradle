@@ -1,0 +1,16 @@
+apply plugin: 'groovy'
+apply plugin: 'idea'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    groovy group: 'org.codehaus.groovy', name: 'groovy', version: '2.0.5'
+
+    compile 'log4j:log4j:1.2.16'
+    compile 'org.apache.commons:commons-vfs2:2.0'
+
+    testCompile 'junit:junit:4.10'
+
+}//end depndencies()
